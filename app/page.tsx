@@ -1,5 +1,11 @@
-import { redirect } from "next/navigation";
 
-export default function Home() {
-   redirect("/gerold");
+import HeroSection from '@/app/components/HeroSection';
+
+export default function GeroldPigWebsite() {
+
+    return (
+        <div>
+        <HeroSection/>
+        </div>
+    )
 }
