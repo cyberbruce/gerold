@@ -54,7 +54,7 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           # Name of your Azure App Service
-          app-name: 'your-nextjs-app-name' # <-- 🚨 REPLACE WITH YOUR APP NAME
+          app-name: 'gerold' 
 
           # This is the secret containing your publishing profile.
           # You get this from the Azure portal.
