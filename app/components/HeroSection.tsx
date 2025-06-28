@@ -62,7 +62,7 @@ export default function HeroSection() {
       </motion.header>
 
       {/* Hero Section */}
-      <section className="relative md:py-20 py-10 overflow-hidden md:min-h-screen pt-20">
+      <section className="relative md:py-20 py-10 overflow-hidden pt-20 min-h-screen md:max-h-[800px]">
         {/* Gerold the Pig Background Image */}
         <motion.div
           className="absolute inset-0"
@@ -73,7 +73,7 @@ export default function HeroSection() {
             height={500}
             src="/gerold.jpeg"
             alt="Gerold the pig background"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full  object-cover object-center"
           />
         </motion.div>
 
@@ -81,7 +81,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 via-yellow-800/40 to-blue-900/50"></div>
 
         <motion.div
-          className="container mx-auto px-6 relative z-10 h-full flex flex-col justify-start"
+          className="container mx-auto px-6 relative z-10 h-full flex flex-col justify-end pb-32 md:justify-start md:pb-0"
           style={{ opacity: heroOpacity }}
         >
           <div className="max-w-xl pt-10">
@@ -104,29 +104,34 @@ export default function HeroSection() {
             >
               Meet the finest Yorkshire pig with exceptional posture and championship bloodlines
             </motion.p>
+          </div>
+        </motion.div>
 
-            <motion.div
-              className="flex flex-col gap-3 max-w-xs"
-              variants={staggerContainer}
-              initial="hidden"
-              animate="visible"
-            >
+        {/* Action Buttons */}
+        <motion.div
+          className="absolute bottom-14 left-0 right-0 z-20 px-6"
+          style={{ opacity: heroOpacity }}
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+        >
+          <div className="container mx-auto flex justify-center md:justify-start">
+            <div className="flex w-full max-w-xs flex-col gap-4 sm:w-auto sm:max-w-none sm:flex-row">
               <motion.a
-                className="bg-blue-900/90 hover:bg-blue-800 text-lg text-yellow-100 px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg backdrop-blur-sm"
-                href="/gallery"                
+                className="bg-blue-900/90 hover:bg-blue-800 text-lg text-yellow-100 px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg backdrop-blur-sm text-center"
+                href="/gallery"
                 whileTap={{ scale: 0.95 }}
               >
                 View Gallery
               </motion.a>
               <motion.a
-                className="bg-yellow-600/90 hover:bg-yellow-500 text-lg text-black px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg backdrop-blur-sm"
+                className="bg-yellow-600/90 hover:bg-yellow-500 text-lg text-black px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg backdrop-blur-sm text-center"
                 href="/support"
-                
                 whileTap={{ scale: 0.95 }}
               >
                 Support Gerold Today!
               </motion.a>
-            </motion.div>
+            </div>
           </div>
         </motion.div>
 
