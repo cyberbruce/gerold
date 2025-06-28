@@ -103,7 +103,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Meet the finest Yorkshire pig with exceptional posture and championship smile
+              Meet the finest Yorkshire pig with exceptional posture and a championship smile
             </motion.p>
           </div>
         </motion.div>
