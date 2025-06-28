@@ -32,17 +32,18 @@ const GalleryPage = () => {
   // Added width and height for a responsive masonry layout
   const galleryItems = [
     { src: '/gerold.jpeg', alt: 'Gerold posing proudly', width: 800, height: 1200 },
-    { src: '/gerold.jpeg', alt: 'Gerold enjoying the sun', width: 1200, height: 800 },
-    { src: '/gerold.jpeg', alt: 'Gerold with his championship ribbon', width: 800, height: 900 },
-    { src: '/gerold.jpeg', alt: 'Gerold taking a nap', width: 1200, height: 750 },
-    { src: '/gerold.jpeg', alt: 'Gerold exploring the farm', width: 800, height: 1100 },
-    { src: '/gerold.jpeg', alt: 'Gerold looking curious', width: 800, height: 800 },
-    { src: '/gerold.jpeg', alt: 'Gerold at the livestock show', width: 1200, height: 900 },
-    { src: '/gerold.jpeg', alt: 'Gerold close-up portrait', width: 800, height: 1000 },
-    { src: '/gerold.jpeg', alt: 'Gerold playing in the mud', width: 1200, height: 850 },
+    { src: '/gerold.jpeg', alt: 'Gerold enjoying the sun', width: 800, height: 1200 },
+    { src: '/gerold.jpeg', alt: 'Gerold with his championship ribbon',width: 800, height: 1200 },
+    { src: '/gerold.jpeg', alt: 'Gerold taking a nap',width: 800, height: 1200},
+    { src: '/gerold.jpeg', alt: 'Gerold exploring the farm', width: 800, height: 1200 },
+    { src: '/gerold.jpeg', alt: 'Gerold looking curious', width: 800, height: 1200 },
+    { src: '/gerold.jpeg', alt: 'Gerold at the livestock show', width: 800, height: 1200 },
+    { src: '/gerold.jpeg', alt: 'Gerold close-up portrait',width: 800, height: 1200 },
+    { src: '/gerold.jpeg', alt: 'Gerold playing in the mud', width: 800, height: 1200 },
     { src: '/gerold.jpeg', alt: 'Gerold with his owner, Savannah', width: 800, height: 1200 },
-    { src: '/gerold.jpeg', alt: 'Gerold showing off his posture', width: 800, height: 950 },
-    { src: '/gerold.jpeg', alt: 'Gerold enjoying a treat', width: 1200, height: 800 },
+    { src: '/gerold.jpeg', alt: 'Gerold showing off his posture', width: 800, height: 1200 },
+    { src: '/gerold.jpeg', alt: 'Gerold enjoying a treat', width: 800, height: 1200 },
+     
   ];
 
   return (
