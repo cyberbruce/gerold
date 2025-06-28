@@ -3,10 +3,10 @@
 
 import { EmailClient, KnownEmailSendStatus } from "@azure/communication-email";
 
+const SUPPORT_ADMIN_EMAIL = process.env.SUPPORT_ADMIN_EMAIL || "";
 const POLLER_WAIT_TIME = 5; // seconds
 
-export async function sendEmail(
-  to: string,
+export async function sendEmail(   
   subject: string,
   body: string
 ): Promise<void> {
@@ -22,11 +22,8 @@ export async function sendEmail(
         html: body,
       },
       recipients: {
-        to: [
-          {
-            address: to,
-          },
-        ],
+        to: SUPPORT_ADMIN_EMAIL.split(',').map(to_email=> ({
+          address: to_email.trim()}))          
       },
     };
 

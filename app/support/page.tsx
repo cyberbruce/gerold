@@ -8,6 +8,7 @@ import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { sendEmail } from '@/app/utils/email'; // Adjust the import path as necessary
+import { StoreSupportEmail } from '@/app/utils/support'; // Adjust the import path as necessary
 import CelebrateSupport from '../components/CelebrateSupport';
 import { useRouter } from 'next/navigation';
 
@@ -35,12 +36,15 @@ const SupportPage = () => {
 
   const onSubmit = async (data: SupportFormData) => {
     try {
-      await sendEmail(
-        'cybruce.martin@gmail.com',
+      const sendMailPromise = sendEmail(        
         'Support for Gerold Fan Club',
         `New support for Gerold from ${data.fullName} (${data.email}):\n\nThank you for your support!`
       );
       console.log('Support registered for:', data);
+
+      const storeEmailPromise = StoreSupportEmail(data.email, data.fullName);
+
+      await Promise.all([sendMailPromise, storeEmailPromise]);
        
       router.replace('/');
     } catch (error) {
