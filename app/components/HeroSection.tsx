@@ -73,7 +73,7 @@ export default function HeroSection() {
             height={500}
             src="/gerold.jpeg"
             alt="Gerold the pig background"
-            className="w-full h-full  object-cover object-center"
+            className="w-full  h-full  object-cover object-center"
           />
         </motion.div>
 
@@ -109,7 +109,7 @@ export default function HeroSection() {
 
         {/* Action Buttons */}
         <motion.div
-          className="absolute md:bottom-auto bottom-10 left-0 right-0 z-20 px-6"
+          className="absolute   bottom-1/8 left-0 right-0 z-20 px-6"
         
           variants={staggerContainer}
           initial="hidden"
