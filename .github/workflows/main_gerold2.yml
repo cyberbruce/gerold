@@ -32,7 +32,7 @@ jobs:
           mv ./public ./build/standalone
 
       - name: Zip artifact for deployment
-        run: zip release.zip ./build/* -r
+        run: zip release.zip build -r
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
