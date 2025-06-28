@@ -251,10 +251,10 @@ export default function HeroSection() {
                 </div>
               </motion.div>
               <h3 className="text-3xl font-bold text-white mb-4">
-                Track Gerold's Journey
+                Track Gerold&apos;s Journey
               </h3>
               <p className="text-white/90 text-lg mb-6 max-w-2xl mx-auto">
-                Dive deep into the data behind Gerold's success! Explore detailed statistics, 
+                Dive deep into the data behind Gerold&apos;s success! Explore detailed statistics, 
                 growth charts, feed conversion ratios, and cost breakdowns of raising a champion Yorkshire pig.
               </p>
               <motion.div

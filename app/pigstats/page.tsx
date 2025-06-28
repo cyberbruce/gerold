@@ -156,7 +156,7 @@ const PigStatsPage = () => {
         </nav>
 
         <header className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Gernold's FFA Journey</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Gernold&apos;s FFA Journey</h1>
           <p className="text-lg text-gray-600 mt-2">A statistical look at raising a champion.</p>
         </header>
 
