@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { ArrowLeft, Heart, User, Mail } from 'lucide-react';
 import { motion } from 'motion/react';
 import { z } from 'zod';
+import { sendEmail } from '@/app/utils/email'; // Adjust the import path as necessary
+
 
 // Define the Zod schema for form validation
 const supportSchema = z.object({
@@ -15,8 +17,16 @@ const supportSchema = z.object({
 //type SupportFormData = z.infer<typeof supportSchema>;
 
 const SupportPage = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    await sendEmail(
+      'cybruce.martin@gmail.com',
+      'Support Request from Gerold Fan Club',
+      `New support request from ${e.currentTarget.fullName.value} (${e.currentTarget.email.value}):\n\nThank you for your support!`
+    );
+
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData.entries());
 
