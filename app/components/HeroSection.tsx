@@ -8,8 +8,8 @@ import { motion, useScroll, useTransform } from 'motion/react';
 export default function HeroSection() {
   //const [showMoreBio, setShowMoreBio] = useState(false);
   const { scrollY } = useScroll();
-  const heroY = useTransform(scrollY, [0, 500], [0, 150]);
-  const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);
+  const heroY = useTransform(scrollY, [0, 300], [0, 150]);
+  const heroOpacity = useTransform(scrollY, [0, 600], [1, 0]);
 
   const staggerContainer = {
     hidden: { opacity: 0 },
@@ -109,8 +109,8 @@ export default function HeroSection() {
 
         {/* Action Buttons */}
         <motion.div
-          className="absolute bottom-24 left-0 right-0 z-20 px-6"
-          style={{ opacity: heroOpacity }}
+          className="absolute md:bottom-auto bottom-10 left-0 right-0 z-20 px-6"
+        
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
