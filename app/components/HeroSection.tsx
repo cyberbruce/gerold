@@ -1,15 +1,16 @@
 'use client';
 
 
-import { Star, Award, Heart, ChevronDown } from 'lucide-react';
+import { Star, Award, Heart, ChevronDown, BarChart3, TrendingUp } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion, useScroll, useTransform } from 'motion/react';
 
 export default function HeroSection() {
   //const [showMoreBio, setShowMoreBio] = useState(false);
   const { scrollY } = useScroll();
   const heroY = useTransform(scrollY, [0, 300], [0, 150]);
-  const heroOpacity = useTransform(scrollY, [0, 600], [1, 0]);
+  const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   const staggerContainer = {
     hidden: { opacity: 0 },
@@ -224,6 +225,61 @@ export default function HeroSection() {
                 </motion.div>
               </div>
             </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Stats Callout Section */}
+      <section className="py-12 bg-gradient-to-r from-blue-600 to-yellow-500">
+        <div className="container mx-auto px-6">
+          <motion.div
+            className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/20"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            whileHover={{ scale: 1.02 }}
+          >
+            <div className="text-center">
+              <motion.div
+                className="flex justify-center mb-6"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                  <BarChart3 className="w-8 h-8 text-white" />
+                </div>
+              </motion.div>
+              <h3 className="text-3xl font-bold text-white mb-4">
+                Track Gerold's Journey
+              </h3>
+              <p className="text-white/90 text-lg mb-6 max-w-2xl mx-auto">
+                Dive deep into the data behind Gerold's success! Explore detailed statistics, 
+                growth charts, feed conversion ratios, and cost breakdowns of raising a champion Yorkshire pig.
+              </p>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Link
+                  href="/pigstats"
+                  className="inline-flex items-center space-x-3 bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  <TrendingUp className="w-6 h-6" />
+                  <span>View Detailed Statistics</span>
+                </Link>
+              </motion.div>
+              <motion.p
+                className="text-white/70 text-sm mt-4"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
+                See weight progression, feed efficiency, costs, and more!
+              </motion.p>
+            </div>
           </motion.div>
         </div>
       </section>
