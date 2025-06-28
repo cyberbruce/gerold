@@ -109,7 +109,7 @@ export default function HeroSection() {
 
         {/* Action Buttons */}
         <motion.div
-          className="absolute bottom-14 left-0 right-0 z-20 px-6"
+          className="absolute bottom-24 left-0 right-0 z-20 px-6"
           style={{ opacity: heroOpacity }}
           variants={staggerContainer}
           initial="hidden"
