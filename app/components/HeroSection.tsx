@@ -63,7 +63,8 @@ export default function HeroSection() {
       </motion.header>
 
       {/* Hero Section */}
-      <section className="relative md:py-20 py-10 overflow-hidden pt-20 min-h-screen md:max-h-[800px]">
+      <section className=" bg-black relative md:py-20 py-10 overflow-hidden pt-20 min-h-screen md:max-h-[800px] flex justify-center">
+        <div className="max-w-[1400px] w-full relative">
         {/* Gerold the Pig Background Image */}
         <motion.div
           className="absolute inset-0"
@@ -143,6 +144,7 @@ export default function HeroSection() {
         >
           <ChevronDown className="w-8 h-8 text-white/80" />
         </motion.div>
+        </div>
       </section>
 
       {/* About Gerold */}
