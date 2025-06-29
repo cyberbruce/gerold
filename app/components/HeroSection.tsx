@@ -95,7 +95,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                Explore Gerold's World
+                Explore Gerold&apos;s World
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Discover more about this exceptional Yorkshire pig through our gallery and learn how you can support his journey to championship.
