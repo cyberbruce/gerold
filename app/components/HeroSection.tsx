@@ -30,16 +30,16 @@ export default function HeroSection() {
 
       {/* Hero Section */}
       <section className="overflow-hidden  min-h-screen  flex justify-center">
-        <div className="max-w-[1400px] w-full relative">
+        <div className="max-w-[1100px] w-full relative">
         {/* Gerold the Pig Background Image */}
         <motion.div
           className="absolute inset-0"
           style={{ y: heroY }}
         >
           <Image
-            width={500}
+            width={1100}
             height={500}
-            src="/gerold.jpeg"
+            src="/gerold.jpg"
             alt="Gerold the pig background"
             className="w-full  h-full  object-cover object-center"
           />
