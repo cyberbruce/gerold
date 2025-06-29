@@ -24,133 +24,133 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-white to-blue-50">
-       
+    <div className="min-h-screen">
+
 
 
       {/* Hero Section */}
-      <section className="overflow-hidden  min-h-screen  flex justify-center">
-        <div className="max-w-[1100px] w-full relative">
-        {/* Gerold the Pig Background Image */}
-        <motion.div
-          className="absolute inset-0"
-          style={{ y: heroY }}
-        >
-          <Image
-            width={1100}
-            height={500}
-            src="/gerold.jpg"
-            alt="Gerold the pig background"
-            className="w-full  h-full  object-cover object-center"
-          />
-        </motion.div>
+      <section className="overflow-hidden  min-h-screen  flex justify-center bg-white">
+        <div className="max-w-[1100px] w-full  relative  ">
+          {/* Gerold the Pig Background Image */}
+          <motion.div
+            className="absolute inset-0"
+            style={{ y: heroY }}
+          >
+            <Image
+              width={1000}
+              height={1000}
+              src="/gerold.jpeg"
+              alt="Gerold the pig background"
+              className="w-full  h-full  object-cover   object-center"
+            />
+          </motion.div>
 
-        {/* Gradient Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 via-yellow-800/40 to-blue-900/50"></div>
+          {/* Gradient Overlay for Text Readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 via-yellow-800/40 to-blue-900/50 "></div>
 
-        <motion.div
-          className="pt-20  container mx-auto px-6 relative z-10  flex flex-col justify-start   md:justify-start"
-          style={{ opacity: heroOpacity }}
-        >
-          <div className="max-w-xl ">
-            <motion.h1
-              className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-200 to-yellow-300 mb-6 drop-shadow-lg"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              GEROLD
-            </motion.h1>
+          <motion.div
+            className="pt-20  container mx-auto px-6 relative z-10  flex flex-col justify-start   md:justify-start"
+            style={{ opacity: heroOpacity }}
+          >
+            <div className="max-w-xl ">
+              <motion.h1
+                className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-200 to-yellow-300 mb-6 drop-shadow-lg"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              >
+                GEROLD
+              </motion.h1>
 
-            <motion.p
-              className="text-xl text-white mb-8 drop-shadow-md font-medium"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              Meet the finest Yorkshire pig with exceptional posture and a championship smile
-            </motion.p>
-          </div>
-        </motion.div>
+              <motion.p
+                className="text-xl text-white mb-8 drop-shadow-md font-medium"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+              >
+                Meet the finest Yorkshire pig with exceptional posture and a championship smile
+              </motion.p>
+            </div>
+          </motion.div>
 
-       
-        <motion.div
-          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"
-          animate={{ y: [0, -10, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <ChevronDown className="w-8 h-8 text-white/80" />
-        </motion.div>
+
+          <motion.div
+            className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"
+            animate={{ y: [0, -10, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <ChevronDown className="w-8 h-8 text-white/80" />
+          </motion.div>
         </div>
       </section>
 
-       {/* Action Buttons */}
-        <section className="py-20 bg-gradient-to-br from-yellow-50 via-white to-blue-50">
-          <div className="container mx-auto px-6">
-            <motion.div
-              className="text-center mb-12"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                Explore Gerold&apos;s World
-              </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Discover more about this exceptional Yorkshire pig through our gallery and learn how you can support his journey to championship.
-              </p>
-            </motion.div>
-            
-            <motion.div
-              className="flex justify-center"
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
-              <div className="flex flex-col sm:flex-row gap-6 max-w-lg w-full">
-                <motion.a
-                  className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center group"
-                  href="/gallery"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <div className="flex items-center justify-center space-x-2">
-                    <span>📸</span>
-                    <span className="group-hover:text-yellow-200 transition-colors">View Gallery</span>
-                  </div>
-                </motion.a>
-                
-                <motion.a
-                  className="flex-1 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center group"
-                  href="/support"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <div className="flex items-center justify-center space-x-2">
-                    <span>🏆</span>
-                    <span className="group-hover:text-white transition-colors">Support Gerold</span>
-                  </div>
-                </motion.a>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              className="mt-12 text-center"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <p className="text-sm text-gray-500">
-                Join us in celebrating excellence in agriculture and FFA values
-              </p>
-            </motion.div>
-          </div>
-        </section>
+      {/* Action Buttons */}
+      <section className="py-20 bg-gradient-to-br from-yellow-50 via-white to-blue-50">
+        <div className="container mx-auto px-6">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Explore Gerold&apos;s World
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Discover more about this exceptional Yorkshire pig through our gallery and learn how you can support his journey to championship.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="flex justify-center"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <div className="flex flex-col sm:flex-row gap-6 max-w-lg w-full">
+              <motion.a
+                className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center group"
+                href="/gallery"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
+              >
+                <div className="flex items-center justify-center space-x-2">
+                  <span>📸</span>
+                  <span className="group-hover:text-yellow-200 transition-colors">View Gallery</span>
+                </div>
+              </motion.a>
+
+              <motion.a
+                className="flex-1 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center group"
+                href="/support"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
+              >
+                <div className="flex items-center justify-center space-x-2">
+                  <span>🏆</span>
+                  <span className="group-hover:text-white transition-colors">Support Gerold</span>
+                </div>
+              </motion.a>
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="mt-12 text-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <p className="text-sm text-gray-500">
+              Join us in celebrating excellence in agriculture and FFA values
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
 
       {/* About Gerold */}
@@ -193,7 +193,7 @@ export default function HeroSection() {
 
             <motion.div
               className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8 shadow-xl"
-              
+
               whileHover={{ scale: 1.02, rotateY: 5 }}
               transition={{ duration: 0.3 }}
             >
@@ -222,7 +222,7 @@ export default function HeroSection() {
                     <motion.div
                       key={index}
                       className="flex justify-between"
-                      
+
                       whileHover={{ x: 5 }}
                       transition={{ duration: 0.2 }}
                     >
@@ -262,7 +262,7 @@ export default function HeroSection() {
                 Track Gerold&apos;s Journey
               </h3>
               <p className="text-white/90 text-lg mb-6 max-w-2xl mx-auto">
-                Dive deep into the data behind Gerold&apos;s success! Explore detailed statistics, 
+                Dive deep into the data behind Gerold&apos;s success! Explore detailed statistics,
                 growth charts, feed conversion ratios, and cost breakdowns of raising a champion Yorkshire pig.
               </p>
               <motion.div
@@ -449,7 +449,7 @@ export default function HeroSection() {
         </div>
       </section>
 
-      
+
       {/* Footer */}
       <motion.footer
         className="bg-gray-800 text-white py-8"
