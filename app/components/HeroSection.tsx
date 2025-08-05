@@ -68,7 +68,7 @@ export default function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                Meet the finest Yorkshire pig with exceptional posture and a championship smile
+                Meet the finest Crossbred pig with exceptional posture.
               </motion.p>
             </div>
           </motion.div>
@@ -98,56 +98,40 @@ export default function HeroSection() {
               Explore Gerold&apos;s World
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Discover more about this exceptional Yorkshire pig through our gallery and learn how you can support his journey to championship.
+              Discover more about this exceptional pig through our gallery
+               showcasing his journey.
             </p>
           </motion.div>
 
-          <motion.div
-            className="flex justify-center"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <div className="flex flex-col sm:flex-row gap-6 max-w-lg w-full">
-              <motion.a
-                className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center group"
-                href="/gallery"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex items-center justify-center space-x-2">
-                  <span>📸</span>
-                  <span className="group-hover:text-yellow-200 transition-colors">View Gallery</span>
-                </div>
-              </motion.a>
-
-              <motion.a
-                className="flex-1 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center group"
-                href="/support"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex items-center justify-center space-x-2">
-                  <span>🏆</span>
-                  <span className="group-hover:text-white transition-colors">Support Gerold</span>
-                </div>
-              </motion.a>
-            </div>
-          </motion.div>
-
-          <motion.div
+            <motion.div
+              className="flex justify-center"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <div className="flex justify-center max-w-lg w-full">
+                <motion.a
+                  className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-12 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center group"
+                  href="/gallery"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <div className="flex items-center justify-center space-x-2">
+                    <span>📸</span>
+                    <span className="group-hover:text-yellow-200 transition-colors">View Gallery</span>
+                  </div>
+                </motion.a>
+              </div>
+            </motion.div>          <motion.div
             className="mt-12 text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <p className="text-sm text-gray-500">
-              Join us in celebrating excellence in agriculture and FFA values
-            </p>
+             
           </motion.div>
         </div>
       </section>
@@ -167,27 +151,19 @@ export default function HeroSection() {
               <h2 className="text-4xl font-bold text-gray-800 mb-6">About Gerold</h2>
               <div className="space-y-4 text-lg text-gray-600">
                 <p>
-                  Gerold is a magnificent Yorkshire pig known throughout the FFA community for his
-                  <span className="text-yellow-600 font-semibold"> exceptional posture</span> and pristine white coat.
-                  As a purebred Yorkshire, he represents the finest qualities of this remarkable breed.
-                </p>
-                <p>
-                  His outstanding conformation and gentle temperament make him a standout competitor
-                  in livestock shows. Gerold&apos;s dedication to maintaining perfect posture has earned
-                  him recognition from judges and fellow competitors alike.
-                </p>
-                <div className="space-y-4">
-                  <p>
-                    Yorkshire pigs are known for their intelligence, hardiness, and excellent mothering abilities.
-                    Gerold embodies all these traits while showcasing the breed&apos;s characteristic white coloring
-                    and erect ears that make Yorkshire pigs so distinctive.
-                  </p>
-                  <p>
-                    Under the careful care and training of Savannah Silveira, Gerold has developed into
-                    a champion-quality pig that represents the best of agricultural excellence and
-                    FFA values of hard work, dedication, and responsible animal husbandry.
-                  </p>
-                </div>
+               Gerold is a barrow, white, crossbred pig. Throughout his journey, he has experienced both challenges and progress.
+</p>
+<p>
+Gerold began his training in the showpen, demonstrating strong natural posture and a solid walking pace. In the early weeks, he made steady progress as he and his handler, Savannah, focused on building consistent technique. However, Gerold soon began to show signs of resistance-attempting to wander off, refusing to walk, and becoming increasingly stubborn.
+</p>
+<p>
+After taking a short break and seeing no improvement, Savannah made the decision to stay committed and work through the difficulties. 
+With patience and determination, she continued to guide Gerold, encouraging him to walk even short distances within the show pen,
+ and around the farm. Several days of persistence and plenty of squealing, Gerold finally responded. He began walking again.
+</p>
+<p>
+Now Gerold and Savannah train daily around the farm. He stays by her side, maintaining a steady pace, and showing improvement with each session. Together, they continue to practice, develop new skills, and prepare for the upcoming Tulare County Fair.
+</p>
               </div>
             </div>
 
@@ -214,8 +190,8 @@ export default function HeroSection() {
                   viewport={{ once: true }}
                 >
                   {[
-                    { label: 'Breed:', value: 'Yorkshire', color: 'text-blue-700' },
-                    { label: 'Color:', value: 'Pure White', color: 'text-yellow-600' },
+                    { label: 'Breed:', value: 'Barrow, Crossbred', color: 'text-blue-700' },
+                    { label: 'Color:', value: 'White', color: 'text-yellow-600' },
                     { label: 'Posture:', value: 'Exceptional', color: 'text-green-600' },
                     { label: 'Temperament:', value: 'Gentle & Calm', color: 'text-purple-600' }
                   ].map((item, index) => (
@@ -237,120 +213,8 @@ export default function HeroSection() {
         </div>
       </section>
 
-      {/* Stats Callout Section */}
-      <section className="py-12 bg-gradient-to-r from-blue-600 to-yellow-500">
-        <div className="container mx-auto px-6">
-          <motion.div
-            className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/20"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            whileHover={{ scale: 1.02 }}
-          >
-            <div className="text-center">
-              <motion.div
-                className="flex justify-center mb-6"
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                  <BarChart3 className="w-8 h-8 text-white" />
-                </div>
-              </motion.div>
-              <h3 className="text-3xl font-bold text-white mb-4">
-                Track Gerold&apos;s Journey
-              </h3>
-              <p className="text-white/90 text-lg mb-6 max-w-2xl mx-auto">
-                Dive deep into the data behind Gerold&apos;s success! Explore detailed statistics,
-                growth charts, feed conversion ratios, and cost breakdowns of raising a champion Yorkshire pig.
-              </p>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ duration: 0.2 }}
-              >
-                <Link
-                  href="/pigstats"
-                  className="inline-flex items-center space-x-3 bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  <TrendingUp className="w-6 h-6" />
-                  <span>View Detailed Statistics</span>
-                </Link>
-              </motion.div>
-              <motion.p
-                className="text-white/70 text-sm mt-4"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-              >
-                See weight progression, feed efficiency, costs, and more!
-              </motion.p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Achievements */}
-      <section id="achievements" className="py-16 bg-gradient-to-r from-blue-50 to-yellow-50">
-        <div className="container mx-auto px-6">
-          <motion.h2
-            className="text-4xl font-bold text-center text-gray-800 mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            Achievements & Recognition
-          </motion.h2>
-          <motion.div
-            className="grid md:grid-cols-3 gap-8"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            {[
-              {
-                icon: Award,
-                title: 'Perfect Posture',
-                description: 'Recognized for maintaining exceptional stance and composure during shows',
-                color: 'yellow'
-              },
-              {
-                icon: Star,
-                title: 'Breed Champion',
-                description: 'Outstanding Yorkshire representative with pure bloodlines',
-                color: 'blue'
-              },
-              {
-                icon: Heart,
-                title: 'Community Favorite',
-                description: 'Beloved by judges and spectators for gentle nature',
-                color: 'green'
-              }
-            ].map((achievement, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="text-center">
-                  <motion.div
-                    className={`w-16 h-16 bg-${achievement.color}-100 rounded-full mx-auto mb-4 flex items-center justify-center`}
-                    whileHover={{ scale: 1.2, rotate: 360 }}
-                    transition={{ duration: 0.6 }}
-                  >
-                    <achievement.icon className={`w-8 h-8 text-${achievement.color}-600`} />
-                  </motion.div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{achievement.title}</h3>
-                  <p className="text-gray-600">{achievement.description}</p>
-                </div>
-              </div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+      
+      
 
       {/* Owner Section */}
       <section id="owner" className="py-16 bg-white">
@@ -388,10 +252,11 @@ export default function HeroSection() {
                   </div>
                   <div className="mt-6">
                     <p className="text-gray-700 leading-relaxed">
-                      Savannah is dedicated to excellence in both academics and FFA. Her consistent
-                      approach to caring for Gerold demonstrates her commitment to responsible
-                      agriculture and animal husbandry. As a freshman, she&apos;s already making her
-                      mark in the FFA community.
+                      Hello, I am Savannah Silveira, this is my first year raising a hog, and this was my experience.
+
+Going into this journey is was terrified, thinking I wouldn't have the talent to do it, and wasn't experienced enough. Going into that, I was ending my 8th grade year, which would mean I would be with a bunch of high schoolers that I don't know. May 10th, picking day-oh my gosh was I nervous. So many things were going through my head that day, thinking about how this had to be the perfect pig, and if it wasn't I wouldn't be good enough. When I was picking I had my eye on a hampshire hog, and though it was perfect, but I looked way down at the end of the pen, and saw a Yorkshire hog. From that point on I knew he was the one. Once I picked him out I had no idea what to do, or even how to get him to his pen. He was in his pen, and was just looking at him making sure he looked good. I realized-wow I'm actually doing this. Day one of taking care of my pig, and I had no idea what to do, looking around at what experienced people were doing. First couple of weeks go by and I know mostly what to do, but still unsure of a couple things. Our first showmanship practice was coming up and I was so scared. I just knew my pig was going to run away from me, and I would get out first. But little did I know I was one of the last people in the pen. After that practice I felt so confident, knowing my pig probably didn't even need practice, but that's where it all went wrong.
+
+ I didn't walk my pigh for about 4 weeks, almost a month. Didn't want to walk arond the farm, in the show pen, or even the direction I wanted him to go in. All he knew where to go was the wash pens, and his pen. I knew I made the biggest mistake of my journey. Thinking I should've walked him the first month I had him, but instead I didn't. So I decided to not let him get what he wants, and pushed him to his limits. That was a hard part, he knew that after I washed him he would get food. That day I didn't give him food right away, after washing him, and pushed him into the showmanship pen. He was breathing so heavy, and relized he was really out of shape. Driving home that day I just wanted to cry, knowing I would never be able to get him walking again. I was hopeless. A couple days later, I tried walking him, again, and again, he didn't want too. Little did I know that I just had to be more agresive with him, and would not let him choose where he wanted to go. After that day when I was hard on him, he finally started to listen. Sure enough he was walking around the pen, I coundn't believe my eyes. Yes, he was running half the time, but sure enough I got him to calm down. Next thing I know, he is walking right next to me, showing massive prograss. I finally felt achived in my journey, and that I could do anything. So if you every feel hopeless, and just want to give up, don't, because if you just keeping pushing yourself, you will feel acomplished in the end.
                     </p>
                   </div>
                 </motion.div>

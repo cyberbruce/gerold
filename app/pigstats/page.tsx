@@ -1,5 +1,4 @@
 "use client";
-
 import React from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
@@ -146,7 +145,7 @@ const PigStatsPage = () => {
         {/* Navigation */}
         <nav className="mb-6">
           <Link 
-            href="/" 
+            href="/"            
             className="inline-flex items-center space-x-2 text-gray-600 hover:text-gray-800 transition-colors duration-200 group"
           >
             <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-200" />
