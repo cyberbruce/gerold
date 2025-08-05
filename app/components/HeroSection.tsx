@@ -219,7 +219,7 @@ Now Gerold and Savannah train daily around the farm. He stays by her side, maint
       {/* Owner Section */}
       <section id="owner" className="py-16 bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <motion.h2
               className="text-4xl font-bold text-center text-gray-800 mb-12"
               initial={{ opacity: 0, y: 30 }}
@@ -229,85 +229,122 @@ Now Gerold and Savannah train daily around the farm. He stays by her side, maint
             >
               Meet the Owner
             </motion.h2>
+            
+            {/* Profile Header */}
             <motion.div
-              className="bg-gradient-to-r from-yellow-50 to-blue-50 rounded-2xl p-8 shadow-xl"
+              className="bg-gradient-to-r from-yellow-50 to-blue-50 rounded-2xl p-8 shadow-xl mb-8"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              whileHover={{ scale: 1.02 }}
+              whileHover={{ scale: 1.01 }}
             >
-              <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="grid md:grid-cols-3 gap-8 items-center">
                 <motion.div
-                  initial={{ opacity: 0, x: -50 }}
+                  className="text-center md:text-left"
+                  initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  <h3 className="text-3xl font-bold text-gray-800 mb-4">Savannah Silveira</h3>
-                  <div className="space-y-3 text-lg text-gray-600">
-                    <p><span className="font-semibold text-yellow-600">Freshman</span> at Tulare Union High School</p>
-                    <p><span className="font-semibold text-blue-700">Great Student</span> with excellent academic performance</p>
-                    <p><span className="font-semibold text-green-600">Very Consistent</span> in all her endeavors</p>
-                  </div>
-                  <div className="mt-6">
-                    <p className="text-gray-700 leading-relaxed">
-                      Hello, I am Savannah Silveira, this is my first year raising a hog, and this was my experience.
-
-Going into this journey is was terrified, thinking I wouldn't have the talent to do it, and wasn't experienced enough. Going into that, I was ending my 8th grade year, which would mean I would be with a bunch of high schoolers that I don't know. May 10th, picking day-oh my gosh was I nervous. So many things were going through my head that day, thinking about how this had to be the perfect pig, and if it wasn't I wouldn't be good enough. When I was picking I had my eye on a hampshire hog, and though it was perfect, but I looked way down at the end of the pen, and saw a Yorkshire hog. From that point on I knew he was the one. Once I picked him out I had no idea what to do, or even how to get him to his pen. He was in his pen, and was just looking at him making sure he looked good. I realized-wow I'm actually doing this. Day one of taking care of my pig, and I had no idea what to do, looking around at what experienced people were doing. First couple of weeks go by and I know mostly what to do, but still unsure of a couple things. Our first showmanship practice was coming up and I was so scared. I just knew my pig was going to run away from me, and I would get out first. But little did I know I was one of the last people in the pen. After that practice I felt so confident, knowing my pig probably didn't even need practice, but that's where it all went wrong.
-
- I didn't walk my pigh for about 4 weeks, almost a month. Didn't want to walk arond the farm, in the show pen, or even the direction I wanted him to go in. All he knew where to go was the wash pens, and his pen. I knew I made the biggest mistake of my journey. Thinking I should've walked him the first month I had him, but instead I didn't. So I decided to not let him get what he wants, and pushed him to his limits. That was a hard part, he knew that after I washed him he would get food. That day I didn't give him food right away, after washing him, and pushed him into the showmanship pen. He was breathing so heavy, and relized he was really out of shape. Driving home that day I just wanted to cry, knowing I would never be able to get him walking again. I was hopeless. A couple days later, I tried walking him, again, and again, he didn't want too. Little did I know that I just had to be more agresive with him, and would not let him choose where he wanted to go. After that day when I was hard on him, he finally started to listen. Sure enough he was walking around the pen, I coundn't believe my eyes. Yes, he was running half the time, but sure enough I got him to calm down. Next thing I know, he is walking right next to me, showing massive prograss. I finally felt achived in my journey, and that I could do anything. So if you every feel hopeless, and just want to give up, don't, because if you just keeping pushing yourself, you will feel acomplished in the end.
-                    </p>
-                  </div>
-                </motion.div>
-                <motion.div
-                  className="text-center"
-                  initial={{ opacity: 0, x: 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                >
                   <motion.div
-                    className=""
+                    className="mb-6 md:mb-0"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     transition={{ duration: 0.3 }}
                   >
                     <Image
                       src="/savannah-head.jpeg"
                       alt="Savannah Silveira"
-                      width={192}
-                      height={192}
-                      className="bg-gradient-to-br from-yellow-200 to-blue-200 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg"
+                      width={160}
+                      height={160}
+                      className="bg-gradient-to-br from-yellow-200 to-blue-200 rounded-full mx-auto md:mx-0 shadow-lg"
                     />
                   </motion.div>
+                </motion.div>
+                
+                <motion.div
+                  className="md:col-span-2"
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                >
+                  <h3 className="text-3xl font-bold text-gray-800 mb-4">Savannah Silveira</h3>
+                  <div className="grid sm:grid-cols-3 gap-4 mb-6">
+                    <div className="text-center p-3 bg-white rounded-lg shadow-sm">
+                      <p className="font-semibold text-yellow-600">Freshman</p>
+                      <p className="text-sm text-gray-600">Tulare Union High School</p>
+                    </div>
+                    <div className="text-center p-3 bg-white rounded-lg shadow-sm">
+                      <p className="font-semibold text-blue-700">Great Student</p>
+                      <p className="text-sm text-gray-600">Academic Excellence</p>
+                    </div>
+                    <div className="text-center p-3 bg-white rounded-lg shadow-sm">
+                      <p className="font-semibold text-green-600">Very Consistent</p>
+                      <p className="text-sm text-gray-600">All Endeavors</p>
+                    </div>
+                  </div>
+                  
                   <motion.div
-                    className="bg-white rounded-lg p-4 shadow-md"
-                    whileHover={{ y: -5 }}
+                    className="bg-white rounded-lg p-4 shadow-sm"
+                    whileHover={{ y: -2 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <h4 className="font-bold text-gray-800 mb-2">FFA Values</h4>
-                    <motion.div
-                      className="text-sm text-gray-600 space-y-1"
-                      variants={staggerContainer}
-                      initial="hidden"
-                      whileInView="visible"
-                      viewport={{ once: true }}
-                    >
+                    <h4 className="font-bold text-gray-800 mb-3">FFA Values</h4>
+                    <div className="grid sm:grid-cols-2 gap-2 text-sm text-gray-600">
                       {[
                         'Dedication to Excellence',
                         'Responsible Animal Care',
                         'Academic Achievement',
                         'Community Leadership'
                       ].map((value, index) => (
-                        <p
-                          key={index}
-                        >
-                          • {value}
+                        <p key={index} className="flex items-center">
+                          <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                          {value}
                         </p>
                       ))}
-                    </motion.div>
+                    </div>
                   </motion.div>
                 </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Story Section */}
+            <motion.div
+              className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <h4 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+                My Journey with Gerold
+              </h4>
+              <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+                <p>
+                  Hello, I am Savannah Silveira, this is my first year raising a hog, and this was my experience.
+                </p>
+                <p>
+                  Going into this journey I was terrified, thinking I wouldn't have the talent to do it, and wasn't experienced enough. Going into that, I was ending my 8th grade year, which would mean I would be with a bunch of high schoolers that I don't know. May 10th, picking day—oh my gosh was I nervous. So many things were going through my head that day, thinking about how this had to be the perfect pig, and if it wasn't I wouldn't be good enough.
+                </p>
+                <p>
+                  When I was picking I had my eye on a Hampshire hog, and thought it was perfect, but I looked way down at the end of the pen, and saw a Yorkshire hog. From that point on I knew he was the one. Once I picked him out I had no idea what to do, or even how to get him to his pen. He was in his pen, and I was just looking at him making sure he looked good. I realized—wow I'm actually doing this.
+                </p>
+                <p>
+                  Day one of taking care of my pig, and I had no idea what to do, looking around at what experienced people were doing. First couple of weeks go by and I know mostly what to do, but still unsure of a couple things. Our first showmanship practice was coming up and I was so scared. I just knew my pig was going to run away from me, and I would get out first. But little did I know I was one of the last people in the pen. After that practice I felt so confident, knowing my pig probably didn't even need practice, but that's where it all went wrong.
+                </p>
+                <p>
+                  I didn't walk my pig for about 4 weeks, almost a month. Didn't want to walk around the farm, in the show pen, or even the direction I wanted him to go in. All he knew where to go was the wash pens, and his pen. I knew I made the biggest mistake of my journey. Thinking I should've walked him the first month I had him, but instead I didn't.
+                </p>
+                <p>
+                  So I decided to not let him get what he wants, and pushed him to his limits. That was a hard part, he knew that after I washed him he would get food. That day I didn't give him food right away, after washing him, and pushed him into the showmanship pen. He was breathing so heavy, and realized he was really out of shape. Driving home that day I just wanted to cry, knowing I would never be able to get him walking again. I was hopeless.
+                </p>
+                <p>
+                  A couple days later, I tried walking him, again, and again, he didn't want to. Little did I know that I just had to be more aggressive with him, and would not let him choose where he wanted to go. After that day when I was hard on him, he finally started to listen. Sure enough he was walking around the pen, I couldn't believe my eyes. Yes, he was running half the time, but sure enough I got him to calm down.
+                </p>
+                <p className="font-semibold text-gray-800 border-l-4 border-blue-500 pl-4 italic">
+                  Next thing I know, he is walking right next to me, showing massive progress. I finally felt achieved in my journey, and that I could do anything. So if you ever feel hopeless, and just want to give up, don't, because if you just keep pushing yourself, you will feel accomplished in the end.
+                </p>
               </div>
             </motion.div>
           </div>
@@ -336,7 +373,7 @@ Going into this journey is was terrified, thinking I wouldn't have the talent to
             >
               <span className="text-black font-bold">G</span>
             </motion.div>
-            <span className="text-xl font-bold">Gerold - Yorkshire Champion</span>
+            <span className="text-xl font-bold">Gerold</span>
           </motion.div>
           <p className="text-gray-400 mb-4">
             Proudly representing Tulare Union High School FFA

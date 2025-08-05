@@ -31,10 +31,10 @@ const GalleryPage = () => {
   // Placeholder image data for Gerold's gallery
   // Added width and height for a responsive masonry layout
   const galleryItems = [
-    { src: '/gerold/IMG_1453.jpg', alt: 'Training with head posture and steadiness', width: 800, height: 1200 },
-    { src: '/gerold/IMG_1594.jpg', alt: 'So dang cute', width: 800, height: 1200 },
-    { src: '/gerold/IMG_1596.jpg', alt: 'Gerold with his championship ribbon',width: 800, height: 1200 },
-    { src: '/gerold/IMG_7983.jpg', alt: 'Training and walking around the farm',width: 800, height: 1200 },
+    { src: '/gerold/IMG_1453.jpg', alt: '', width: 800, height: 1200 },
+    { src: '/gerold/IMG_1594.jpg', alt: '', width: 800, height: 1200 },
+    { src: '/gerold/IMG_1596.jpg', alt: '',width: 800, height: 1200 },
+    { src: '/gerold/IMG_7983.jpg', alt: '',width: 800, height: 1200 },
      
   ];
 
